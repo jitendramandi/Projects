@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Site</title>
+    <script type="text/javascript">
+    
+    function tovalidate()
+    {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("emailid").value;
+        var phoneno = document.getElementById("phone").value;
+
+        var regxname = /^([a-z]+)([\s a-z]+)?$/i
+        var regxmail = /^([a-z 0-9 \. - _ ]+)@([a-z 0-9 \-]+).([com ac in net org co]{2,6})([\. in]{3,5})?$/
+        var regxno = /^[6-9]\d{9}$/
+
+        if(name.trim() == "")
+        {
+            alert("Please fill the name field");
+        }
+        else if(regxname.test(name))
+        {
+            alert("Valid name");
+        }
+        else
+        {
+            alert("InValid name");
+        }
+        if (email.trim() == "")
+        {
+            alert("Please fill the email field");
+        }
+        else if(regxmail.test(email))
+        {
+            alert("Valid email-ID");
+        }
+        else
+        {
+            alert("InValid mail");
+        }
+        if(phoneno.trim()=="")
+        {
+            alert("Please fill the phone no field");
+        }
+        else if(regxno.test(phoneno))
+        {
+            alert("Valid Number");
+        }
+        else
+        {
+            alert("InValid number");
+        }
+    }
+    </script>
+    <style>
+        body{
+            background-color: lavender;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Registration Form</h1>
+        <form action="welcome.html">
+            <label>Full Name: <input type="text" placeholder="Name" id="name" required></label>
+            <br></br>
+            <label>Email-ID: <input type="email" placeholder="Email-id" id="emailid" required></label>
+            <br></br>
+            <label>Phone No: <input type="text" placeholder="Your number" id="phone" required></label>
+            <br></br>
+            <button onclick="tovalidate()" type="button" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
