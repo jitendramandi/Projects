@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            background: #3e473f;
+        }
+        .container {
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background: rgb(230, 109, 39);
+            margin: 10px auto;
+            padding:20px;
+        }
+        .inside-container {
+            margin-top: 35px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white
+        }
+
+        #decrease {
+            margin-left: 35px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Simple Counter</h1>
+    <div class='container'>
+        <div class='inside-container'>
+            <button id='decrease'>-</button>
+            <input type="number" value="0" id='number'>
+            <button id='increase'>+</button>
+        </div>
+    </div>
+    <script>
+        let decButton = document.getElementById('decrease');
+        let incButton = document.getElementById('increase');
+        let number = document.querySelector('input');
+        decButton.addEventListener('click', function() {
+            if (number.value > 0) {
+                number.value--;
+            }
+        })
+        incButton.addEventListener('click', function(){
+            number.value++;
+        })
+    </script>
+</body>
+</html>
