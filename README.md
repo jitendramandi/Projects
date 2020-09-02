@@ -1,2 +1,2 @@
-# registration-form
-This is not a registration form. Probably I will have to change the project title to Hello World or something. So, here I made changes.
+# My Projects
+This is the place to find all my projects I have been working on to enhance my understanding on web development.
