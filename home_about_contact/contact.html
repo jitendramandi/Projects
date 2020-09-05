@@ -7,6 +7,51 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <strong>Work in Progress.</strong>
+    <header>
+        <div class="logo">
+            <img src="main-logo.png" alt="logo">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="home"><a href="home.html">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contact-us"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <div class="title">
+            <h1>Contact Us</h1>
+            <p>Please feel free to contact us regarding any help you need. We also appreciate your feedback
+                 regarding your experience while visiting this site. Incase of any, issues we'll surely 
+                respond to your queries.</p>
+        </div>
+        <div class="info-container">
+            <div class="our-address">
+                <h3>Address</h3>
+                <p>Kepler 1649C</p>
+                <br>
+                <h3>Phone</h3>
+                <p>7762920339</p>
+                <br>
+                <h3>Email</h3>
+                <p>jitendramandi007@gmail.com</p>
+            </div>
+            <div class="get-address">
+                <form action="#">
+                    <h3>Send Message</h3>
+                    <br>
+                    <label>Full Name: <br><input type="text" placeholder="Name" id="name" required></label>
+                    <br></br>
+                    <label>Email-ID: <br><input type="email" placeholder="Email-id" id="emailid" required></label>
+                    <br></br>
+                    <label>Type your message: <br><textarea name="" id="text-area" cols="30" rows="5" required></textarea></label>
+                    <br></br>
+                    <button onclick="toValidate()" type="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="contact.js"></script>
 </body>
 </html>

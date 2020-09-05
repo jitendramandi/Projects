@@ -13,7 +13,8 @@
         var phoneno = document.getElementById("phone").value;
 
         var regxname = /^([a-z]+)([\s a-z]+)?$/i
-        var regxmail = /^([a-z 0-9 \. - _ ]+)@([a-z 0-9 \-]+).([com ac in net org co]{2,6})([\. in]{3,5})?$/
+        var regxmail = /^([a-z 0-9 \. - _ ]+)@([a-z 0-9 -]+).([com ac in net org co]{2,6})([\. in]{3,5})?$/
+        //
         var regxno = /^[6-9]\d{9}$/
 
         if(name.trim() == "")
