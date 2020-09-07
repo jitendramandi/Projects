@@ -6,6 +6,6 @@ function toValidate() {
         alert('Thank you');
     }
     else {
-        alert('Please enter valid email ID');
+        alert('Please enter valid email-ID');
     }
 }
